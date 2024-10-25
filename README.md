@@ -1,2 +1,2 @@
 # calorie-calculator
-calculates your daily calorie expenditure
+calculates your daily caloric expenditure
