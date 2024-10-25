@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calorie Calculator</h1>
+    <form id="calorie-form">
+        <label for="weight">Gewicht (kg):</label>
+        <input type="number" id="weight" required>
+
+        <label for="height">Größe (cm):</label>
+        <input type="number" id="height" required>
+
+        <label for="age">Alter:</label>
+        <input type="number" id="age" required>
+
+        <label for="gender">Geschlecht:</label>
+        <select id="gender">
+            <option value="male">Männlich</option>
+            <option value="female">Weiblich</option>
+        </select>
+
+        <label for="activity">Aktivitätslevel:</label>
+        <select id="activity">
+            <option value="1.2">Wenig oder keine Aktivität</option>
+            <option value="1.375">Leicht aktiv (Sport 1-3 Tage/Woche)</option>
+            <option value="1.55">Mäßig aktiv (Sport 3-5 Tage/Woche)</option>
+            <option value="1.725">Sehr aktiv (Sport 6-7 Tage/Woche)</option>
+            <option value="1.9">Extrem aktiv (intensives Training)</option>
+        </select>
+
+        <button type="button" onclick="calculateCalories()">Berechnen</button>
+    </form>
+    <div id="result"></div>
+    <script src="app.js"></script>
+</body>
+</html>
